@@ -1,12 +1,12 @@
 #define trigPin 2
 #define echoPin 3
 
-const int numReadings = 100; // Number of distance measurements to take
-long durations[numReadings]; // Array to store echo pulse durations
-int distances[numReadings]; // Array to store calculated distances
+const int numReadings = 100; 
+long durations[numReadings]; 
+int distances[numReadings]; 
 
 void setup() {
-  Serial.begin(9600); // Initialize serial communication
+  Serial.begin(9600); 
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 }
